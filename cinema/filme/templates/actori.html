@@ -1,0 +1,14 @@
+<h1>Actori</h1>
+<table border="1">
+  <tr><th>ID</th><th>Nume</th><th>Rol</th><th>Film</th><th>Producător</th></tr>
+  {% for a in actori %}
+  <tr>
+    <td>{{ a.0 }}</td>
+    <td>{{ a.1 }}</td>
+    <td>{{ a.2 }}</td>
+    <td>{{ a.3 }}</td>
+    <td>{{ a.4 }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<a href="/">Înapoi</a>

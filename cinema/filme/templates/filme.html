@@ -1,0 +1,19 @@
+<h1>Filme</h1>
+<table border="1">
+  <tr>
+    <th>ID</th><th>Titlu</th><th>Gen</th><th>An</th><th>Durată</th><th>Rating</th><th>Actori</th><th>Producători</th>
+  </tr>
+  {% for f in filme %}
+  <tr>
+    <td>{{ f.0 }}</td>
+    <td>{{ f.1 }}</td>
+    <td>{{ f.2 }}</td>
+    <td>{{ f.3 }}</td>
+    <td>{{ f.4 }}</td>
+    <td>{{ f.5 }}</td>
+    <td>{{ f.6 }}</td>
+    <td>{{ f.7 }}</td>
+  </tr>
+  {% endfor %}
+</table>
+<a href="/">Înapoi</a>
